@@ -1,0 +1,20 @@
+package com.practice;
+
+public class Student {
+	
+	int studentId;
+	String studentName;
+	String studentCity;
+	
+	
+	public void study() {
+		System.out.println(studentName+ " is Studying ....");
+	}
+	
+	public void showDeatail() {
+		System.out.println("Student Name is : "+ studentName);
+		System.out.println("Student Id is : "+studentId );
+		System.out.println("Student City is : "+ studentCity);
+	}
+
+}
