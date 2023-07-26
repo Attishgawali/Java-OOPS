@@ -87,3 +87,15 @@ Abstraction is a concept in programming that allows us to focus on the essential
 Abstraction is achieved through abstract classes and interfaces. An abstract class is a class that cannot be instantiated and serves as a blueprint for derived classes. It can define abstract methods (methods without implementation) and also provide implementations for common behaviors. Derived classes inherit from the abstract class and provide their own implementations for the abstract methods.
 
 Interfaces, on the other hand, define a contract of methods that a class must implement. They provide a way to achieve abstraction by specifying what an object can do without concerning how it does it. Classes can implement multiple interfaces, enabling them to exhibit different behaviors.
+
+*POLYMORPHISM
+Polymorphism is one of the four fundamental principles of object-oriented programming (OOP). It allows objects of different classes to be treated as objects of a common base class, providing a way to create flexible and extensible code. The term "polymorphism" comes from the Greek words "poly" (many) and "morphos" (forms), indicating the ability of an object to take on many forms.
+There are two main types of polymorphism in Java:
+
+1.Compile-time Polymorphism (Method Overloading):
+Compile-time polymorphism occurs when multiple methods with the same name but different parameter lists (number or type of parameters) are defined within the same class. During compilation, the correct method to be executed is determined based on the method's name and the number and types of arguments passed to it
+
+2.Run-time Polymorphism (Method Overriding):
+Run-time polymorphism occurs when a subclass provides a specific implementation for a method that is already defined in its superclass. This is achieved by using the "extends" keyword to create a subclass that inherits from the superclass. At runtime, the JVM determines which version of the method to execute based on the actual object's type, rather than the reference type.
+
+Polymorphism allows us to write more generic code that can work with objects of different types and is a powerful tool for creating flexible and maintainable applications. By programming to the base class or interface, we can take advantage of polymorphism and easily extend our code to handle new types of objects without modifying existing code.
